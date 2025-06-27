@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+.contact-section {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+  background: #ffffff;
+  color: #333;
+}
+
+.contact-section h2 {
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.form-note {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.form-note a {
+  color: #e29e28;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-row input {
+  flex: 1;
+  min-width: 250px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #f4a529;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 30px;
+  max-width: 200px;
+  margin: auto;
+}
+.contact-form button:hover {
+  background-color: #e3911f;
+}
+
+.footer {
+  background-color: #15110f;
+  color: #fff;
+  padding: 60px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+}
+
+.footerbox {
+  flex: 250px;
+}
+
+.footerbox h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.footerbox p {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.footerbox p i {
+  margin-right: 10px;
+  color: #f4a529;
+}
+
+
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-box ul li {
+  margin-bottom: 10px;
+}
+
+.footer-box ul li a {
+  text-decoration: none;
+  color: #ddd;
+  font-size: 15px;
+  margin-right: 8px;
+}
+.footer-bottom {
+  border-top: 1px solid #222;
+  margin-top: 40px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+}
+
+    </style>
+</head>
+<body>
+    <section class="contact-section">
+  <p style="color: #f4a529; font-weight: bold;">//Contact us</p>
+  <h2>If You Have Any Query,<br>Please Contact Us</h2>
+  <p class="form-note">
+    The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes.
+    Just copy and paste the files, add a little code and you're done.
+    <a href="#">Download Now.</a>
+  </p>
+
+  <form class="contact-form" action="#" method="post">
+    <div class="form-row">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+    </div>
+    <input type="text" name="subject" placeholder="Subject">
+    <textarea name="message" placeholder="Message" rows="6" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-box">
+      <h3>Office Address</h3><br>
+      <p><i class="fas fa-map-marker-alt"></i> 123 Street, Coimbatore, Tamil Nadu</p><br>
+      <p><i class="fas fa-phone-alt"></i> +012 345 67890</p><br>
+      <p><i class="fas fa-envelope"></i> info@example.com</p><br>
+      <div class="footer-socials">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-box">
+      <h3>Quick Links</h3><br>
+      <ul>
+        <li><a href="#"><i class="fas fa-angle-right"></i> About Us</a></li>
+        <li><a href="#"><i class="fas fa-angle-right"></i> Contact Us</a></li>
+        <li><a href="#"><i class="fas fa-angle-right"></i> Our Services</a></li>
+        <li><a href="#"><i class="fas fa-angle-right"></i> Terms & Condition</a></li>
+        <li><a href="#"><i class="fas fa-angle-right"></i> Support</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-box">
+      <h3>Quick Links</h3><br>
+      <ul>
+        <li><a href="#"><i class="fas fa-angle-right"></i> About Us</a></li>
+        <li><a href="#"><i class="fas fa-angle-right"></i> Contact Us</a></li>
+        <li><a href="#"><i class="fas fa-angle-right"></i> Our Services</a></li>
+        <li><a href="#"><i class="fas fa-angle-right"></i> Terms & Condition</a></li>
+        <li><a href="#"><i class="fas fa-angle-right"></i> Support</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© <span>Golden Crust</span>, All Right Reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
