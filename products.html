@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.productcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  max-width: 1000px;
+  margin: auto;
+}
+.productcard {
+  background: #fff1dc;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+.productheader {
+  padding: 15px;
+}
+.pricetag {
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 8px;
+}
+.productcard h2 {
+  color: #222;
+  margin: 10px;
+}
+.productcard p {
+  font-size: 14px;
+  color: #555;
+}
+.productcard img {
+  width: 150%;
+  height: 250px;
+}
+        
+.footer {
+  background-color: #15110f;
+  color: #fff;
+  padding: 60px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+}
+
+.footerbox {
+  flex: 250px;
+}
+
+.footerbox h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.footerbox p {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.footerbox p i {
+  margin-right: 10px;
+  color: #f4a529;
+}
+
+
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-box ul li {
+  margin-bottom: 10px;
+}
+
+.footer-box ul li a {
+  text-decoration: none;
+  color: #ddd;
+  font-size: 15px;
+  margin-right: 8px;
+}
+.footer-bottom {
+  border-top: 1px solid #222;
+  margin-top: 40px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+}
+    </style>
+</head>
+<body>
+    <section class="Products">
+    <p style="font-weight: bold; color: #f4a529; text-align: center;">// Bakery Products</p><br>
+    <div class="head">
+      <h2 style="text-align: center;">Explore The Categories Of<br>Our Bakery Products</h2><br>
+    </section>
+  <section class="productcontainer">
+  <div class="productcard">
+    <div class="productheader">
+      <span class="pricetag">₹599 - ₹2999</span>
+      <h2>Cake</h2>
+      <p>Deliciously soft and sweet, our cakes are perfect for every celebration.Crafted with love and topped with rich, creamy frosting..</p>
+    </div><br>
+    <img src="jasmine-bartel-8LtrMQfeDkQ-unsplash.jpg" alt="Cake">
+  </div>
+
+  <div class="productcard">
+    <div class="productheader">
+      <span class="pricetag">₹29 - ₹99</span>
+      <h2>Bread</h2>
+      <p>Freshly baked breads with a golden crust and soft, fluffy center.Perfect for sandwiches, toasts, or enjoyed warm with butter.</p>
+    </div><br>
+    <img src="wesual-click-rsWZ-P9FbQ4-unsplash.jpg" alt="Bread">
+  </div>
+
+  <div class="productcard">
+    <div class="productheader">
+      <span class="pricetag">₹29 - ₹120</span>
+      <h2>Cookies</h2>
+      <p>Crispy on the outside, chewy on the inside our cookies are a treat in every bite.Baked with premium ingredients for the perfect sweet snack.</p>
+    </div>
+    <img src="sj-YDvfndOs4IQ-unsplash.jpg" alt="Cookies">
+  </div>
+  </section><br><br>
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-box">
+      <h3>Office Address</h3><br>
+      <p><i class="fas fa-map-marker-alt"></i> 123 Street, Coimbatore, Tamil Nadu</p><br>
+      <p><i class="fas fa-phone-alt"></i> +012 345 67890</p><br>
+      <p><i class="fas fa-envelope"></i> info@example.com</p><br>
+      <div class="footer-socials">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-box">
+      <h3>Quick Links</h3><br>
+      <ul>
+        <li><a href="#"><i class="fas fa-angle-right"></i> About Us</a></li>
+        <li><a href="#"><i class="fas fa-angle-right"></i> Contact Us</a></li>
+        <li><a href="#"><i class="fas fa-angle-right"></i> Our Services</a></li>
+        <li><a href="#"><i class="fas fa-angle-right"></i> Terms & Condition</a></li>
+        <li><a href="#"><i class="fas fa-angle-right"></i> Support</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-box">
+      <h3>Quick Links</h3><br>
+      <ul>
+        <li><a href="#"><i class="fas fa-angle-right"></i> About Us</a></li>
+        <li><a href="#"><i class="fas fa-angle-right"></i> Contact Us</a></li>
+        <li><a href="#"><i class="fas fa-angle-right"></i> Our Services</a></li>
+        <li><a href="#"><i class="fas fa-angle-right"></i> Terms & Condition</a></li>
+        <li><a href="#"><i class="fas fa-angle-right"></i> Support</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© <span>Golden Crust</span>, All Right Reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
